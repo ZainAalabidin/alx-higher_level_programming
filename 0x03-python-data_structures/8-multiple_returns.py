@@ -7,5 +7,4 @@ def multiple_returns(sentence):
         length = len(sentence)
         char = sentence[0]
         detail = length, char
-
         return detail
