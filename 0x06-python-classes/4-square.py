@@ -30,11 +30,11 @@ class Square:
 
         Return: the current square area.
         """
-        return self.__size ** 2
+        return self.__size**2
+
     @property
     def size(self):
-        """Returns the size of a square
-        """
+        """Returns the size of a square"""
         return self.__size
 
     @size.setter
