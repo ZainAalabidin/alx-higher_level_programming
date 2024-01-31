@@ -60,7 +60,7 @@ class Rectangle:
     @width.setter
     def width(self, value):
         """Args:
-            value (int): horizontal dimension of rectangle
+            value (int): horizontal dimension of rectangle.
 
         Attributes:
             __height (int): horizontal dimension of rectangle.
