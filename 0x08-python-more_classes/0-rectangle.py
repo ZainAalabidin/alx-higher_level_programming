@@ -4,6 +4,6 @@
 
 
 class Rectangle:
-    """Empty class , will be built upon in later tasks.
-    """
+    """Empty class , will be built upon in later tasks."""
+
     pass
