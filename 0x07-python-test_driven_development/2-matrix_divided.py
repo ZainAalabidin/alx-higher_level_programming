@@ -25,8 +25,9 @@ def matrix_divided(matrix, div):
         matrix: result of division.
     """
     row_size = None
+    msg = "matrix must be a matrix (list of lists) of integers/floats"
     if not matrix or not isinstance(matrix, list):
-        raise TypeError("matrix must be a matrix (list of lists) of integers/floats")
+        raise TypeError(msg)
 
     for row in matrix:
         if not row or not isinstance(row, list):
@@ -37,7 +38,7 @@ def matrix_divided(matrix, div):
         for colm in row:
             if not isinstance(colm, int) and not isinstance(colm, float):
                 raise TypeError(
-                    "matrix must be a matrix (list of lists) of integers/floats"
+                    msg
                 )
 
         if row_size is None:
