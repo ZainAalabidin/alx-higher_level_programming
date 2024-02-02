@@ -54,3 +54,14 @@ Adding negative and posetive integer numbers.
     Traceback (most recent call last):
         ...
     ValueError: cannot convert float NaN to integer
+
+    >>> add_integer(4, float("nan"))
+    Traceback (most recent call last):
+        ...
+    ValueError: cannot convert float NaN to integer
+
+    Passing 0 arguments.
+    >>> add_integer()
+    Traceback (most recent call last):
+        ...
+    TypeError: add_integer() missing 1 required positional argument: 'a'
