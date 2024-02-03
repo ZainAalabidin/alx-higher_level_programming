@@ -4,19 +4,21 @@
 Attributes:
     say_my_name: prints My name is <first name> <last name>
 """
+
+
 def say_my_name(first_name, last_name=""):
     """Prints My name is <first name> <last name>
 
-        Args:
-            first_name (str): the first name.
-            last_name (str): the second name.
+    Args:
+        first_name (str): the first name.
+        last_name (str): the second name.
 
-        Raises:
-            TypeError: if first name not string.
-            TypeError: if second name not string.
+    Raises:
+        TypeError: if first name not string.
+        TypeError: if second name not string.
 
-        Returns:
-            string: full name as string
+    Returns:
+        string: full name as string
     """
     if not isinstance(first_name, str):
         raise TypeError("first_name must be a string")

@@ -29,3 +29,18 @@
     Traceback (most recent call last):
         ...
     TypeError: last_name must be a string
+    
+    >>> say_my_name(1, "ali")
+    Traceback (most recent call last):
+        ...
+    TypeError: first_name must be a string
+
+    >>> say_my_name("zain", [4])
+    Traceback (most recent call last):
+        ...
+    TypeError: last_name must be a string
+
+    >>> say_my_name("zain", "ali", "musta")
+    Traceback (most recent call last):
+        ...
+    TypeError: say_my_name() takes from 1 to 2 positional arguments but ...
