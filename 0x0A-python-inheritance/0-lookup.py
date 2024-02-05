@@ -1,9 +1,10 @@
 #!/usr/bin/python3
 """Define module `0-lookup.py` """
 
+
 def lookup(obj):
-    """A function that returns the list of available attributes and methods of an object
-    
+    """Lookup method
+
     Args:
         obj: the object class.
 
