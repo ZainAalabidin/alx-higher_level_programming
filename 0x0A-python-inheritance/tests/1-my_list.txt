@@ -48,3 +48,9 @@ Original list unchange:
     [-21, -3, 0, 43]
     >>> ml
     [0, -3, -21, 43]
+
+Test append:
+    >>> ml = MyList()
+    >>> ml.append(10)
+    >>> ml
+    [10]
