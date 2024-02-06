@@ -4,7 +4,7 @@ Rectangle = __import__("9-rectangle").Rectangle
 
 
 class Square(Rectangle):
-    """Rectangle class"""
+    """Square class"""
 
     def __init__(self, size):
         """Initilized Square class"""
