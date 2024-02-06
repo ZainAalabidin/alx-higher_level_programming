@@ -5,6 +5,7 @@ Rectangle = __import__("9-rectangle").Rectangle
 
 class Square(Rectangle):
     """Square class"""
+
     def __init__(self, size):
         """Method for initializing a Square class"""
         self.integer_validator("size", size)
@@ -13,8 +14,8 @@ class Square(Rectangle):
 
     def area(self):
         """Method that returns area of rectangle"""
-        return self.__size ** 2
+        return self.__size**2
 
     def __str__(self):
         """Method that returns a string"""
-        return "[Rectangle] {}/{}".format(self.__size, self.__size)
+        return "[Square] {}/{}".format(self.__size, self.__size)
