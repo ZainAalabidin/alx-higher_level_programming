@@ -2,7 +2,7 @@
 """Define module that have `BaseGeometry` class"""
 
 
-class BaseGeometry:
+class BaseGeometry():
     """BaseGeometry class"""
 
     def area(self):
