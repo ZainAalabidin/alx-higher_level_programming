@@ -24,4 +24,4 @@ class Student:
     def reload_from_json(self, json):
         """Method that return values of json file from path"""
         for k, v in json.items():
-            setattr(self,  k, v) 
+            setattr(self, k, v)
