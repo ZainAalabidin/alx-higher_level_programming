@@ -1,12 +1,16 @@
 #!/usr/bin/python3
-"""save_to_json_file module.
+"""Add item script."""
+import sys
 
-Contains a function that writes an Object to a text file.
-"""
-import json
+save_to_json_file = __import__("5-save_to_json_file").save_to_json_file
+load_from_json_file = __import__("6-load_from_json_file").load_from_json_file
 
+try:
+    lst = load_from_json_file("add_item.json")
+except:
+    lst = []
 
-def save_to_json_file(my_obj, filename):
-    """Writes an Object to a text file, using a JSON representation."""
-    with open(filename, "w") as f:
-        json.dump(my_obj, f)
+new_items = sys.argv[1:]
+lst.extend(new_items)
+
+save_to_json_file(lst, "add_item.json")
