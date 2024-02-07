@@ -18,7 +18,5 @@ class Student:
     def to_json(self, attrs=None):
         """Method that return value for specific key"""
         if attrs is not None:
-            for i in attrs:
-                return {k: v for k, v in self.__dict__.items() if k in attrs}
+            return {k: v for k, v in self.__dict__.items() if k in attrs}
         return self.__dict__
-    
