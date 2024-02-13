@@ -31,10 +31,10 @@ class Base:
         if list_objs is None:
             pass
         else:
-            list_objs = [x.to_dictionary() for x in list_objs]
+            list_obj = [x.to_dictionary() for x in list_objs]
             filename = cls.__name__ + ".json"
             with open(filename, "w", encoding="utf-8") as file:
-                file.write(cls.to_json_string(list_objs))
+                file.write(cls.to_json_string(list_obj))
 
     @staticmethod
     def from_json_string(json_string):
