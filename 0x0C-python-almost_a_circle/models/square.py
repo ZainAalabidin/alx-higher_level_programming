@@ -31,14 +31,14 @@ class Square(Rectangle):
         """update method"""
         if len(args) > 0:
             self.id = args[0] if len(args) > 0 else self.id
-            self.__size = args[1] if len(args) > 1 else self.__size
+            self.size = args[1] if len(args) > 1 else self.size
             self.x = args[2] if len(args) > 2 else self.x
             self.y = args[3] if len(args) > 3 else self.x
         else:
             if len(kwargs) > 0:
                 for key, val in kwargs.items():
                     self.id = val if key == "id" else self.id
-                    self.__size = val if key == "size" else self.__size
+                    self.size = val if key == "size" else self.size
                     self.x = val if key == "x" else self.x
                     self.y = val if key == "y" else self.y
 
