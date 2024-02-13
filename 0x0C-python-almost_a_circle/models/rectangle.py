@@ -81,14 +81,14 @@ class Rectangle(Base):
 
     def display(self):
         """display the rectangle"""
-        if self.y and self.x == 0:
-            for _ in range(self.height):
-                print("#" * self.width)
+        if self.__y == 0 and self.__x == 0:
+            for o in range(self.__height):
+                print("#" * self.__width)
         else:
-            for x in range(self.y):
+            for o in range(self.__y):
                 print()
-            for x in range(self.height):
-                print(" " * self.x + "#" * self.width)
+            for o in range(self.__height):
+                print(" " * self.__x + "#" * self.__width)
 
     def __str__(self):
         """special method"""
