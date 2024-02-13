@@ -31,11 +31,11 @@ class Base:
         filename = cls.__name__ + ".json"
         list_dict = []
         if list_objs is None:
-            lists = cls.to_json_string(list_dict)
-            with open(filename, "w", encoding="utf-8") as file:
-                file.write(lists)
+            pass
         else:
-            list_dict.append([x.to_dictionary() for x in list_objs])
+            for x in range(len(list_objs)):
+                list_dict.append(list_objs[x].to_dictionary())
+
             lists = cls.to_json_string(list_dict)
             with open(filename, "w", encoding="utf-8") as file:
                 file.write(lists)
