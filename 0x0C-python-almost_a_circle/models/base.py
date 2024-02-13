@@ -37,8 +37,8 @@ class Base:
                 list_dict.append(list_objs[x].to_dictionary())
 
             lists = cls.to_json_string(list_dict)
-            
-            with open(filename, "w", encoding="utf-8") as file:
+
+            with open(filename, "w") as file:
                 file.write(lists)
 
     @staticmethod
