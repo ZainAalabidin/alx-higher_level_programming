@@ -28,7 +28,7 @@ class Base:
     @classmethod
     def save_to_file(cls, list_objs):
         """save object to file"""
-        filename = cls.__name__ + ".json"
+        filename = "{}.json".format(cls.__name__)
         list_dict = []
         if not list_objs:
             pass
