@@ -80,14 +80,14 @@ class Rectangle(Base):
         return self.__width * self.__height
 
     def display(self):
-        """desplay the rectangle"""
+        """display the rectangle"""
         if self.__y and self.__x == 0:
             for _ in range(self.__height):
                 print("#" * self.__width)
         else:
-            for _ in range(self.__y):
+            for x in range(self.__y):
                 print()
-            for _ in range(self.__height):
+            for x in range(self.__height):
                 print(" " * self.__x + "#" * self.__width)
 
     def __str__(self):
