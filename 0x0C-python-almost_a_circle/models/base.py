@@ -28,7 +28,7 @@ class Base:
     @classmethod
     def save_to_file(cls, list_objs):
         """save object to file"""
-        filename = "{}.json".format(cls.__name__)
+        filename = cls.__name__ + ".json"
         list_dict = []
         if not list_objs:
             pass
@@ -36,10 +36,10 @@ class Base:
             for x in range(len(list_objs)):
                 list_dict.append(list_objs[x].to_dictionary())
 
-            lists = cls.to_json_string(list_dict)
+        lists = cls.to_json_string(list_dict)
 
-            with open(filename, "w") as file:
-                file.write(lists)
+        with open(filename, "w") as file:
+            file.write(lists)
 
     @staticmethod
     def from_json_string(json_string):
