@@ -5,8 +5,7 @@ from models.base import Base
 from models.rectangle import Rectangle
 from models.square import Square
 from unittest.mock import patch
-from io import StringIO
-import os
+import io
 
 
 class baseClassTest(unittest.TestCase):
@@ -77,3 +76,6 @@ class baseClassTest(unittest.TestCase):
             content = file.read()
 
         self.assertEqual(content, res)
+
+if __name__ == "__main__":
+    unittest.main()
