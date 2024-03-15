@@ -1,6 +1,6 @@
 0x0D-SQL_introduction
-Description
-What you should learn from this project:
+Description\n
+What you should learn from this project:\n
 
 What’s a database
 What’s a relational database
