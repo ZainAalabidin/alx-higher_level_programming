@@ -1,9 +1,3 @@
 #!/bin/bash
-# Send a HEAD request to the URL and store the response headers in a variable
-response_headers=$(curl -s -I "$1")
-
-# Extract the status code from the response headers
-status_code=$(echo "$response_headers" | head -n 1 | awk '{print $2}')
-
-# Display the status code
-echo "Status code: $status_code"
+# Makes a request to 0.0.0.0:5000/catch_me that gets the message "You got me!".
+curl -sL -X PUT -H "Origin: HolbertonSchool" -d "user_id=98" 0.0.0.0:5000/catch_me
