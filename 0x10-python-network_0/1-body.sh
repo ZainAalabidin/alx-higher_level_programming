@@ -1,7 +1,3 @@
 #!/bin/bash
-<<<<<<< HEAD
-#  takes in a URL, sends a GET request to the URL, and displays the body of the response
-=======
-# Takes in a URL, sends a GET request to the URL, and displays the body of the response
->>>>>>> be83247515eacd19dc1e219f58bafefff734676e
+# send a GET request to an URL with curl, and display the body of the response
 curl -sL "$1"
