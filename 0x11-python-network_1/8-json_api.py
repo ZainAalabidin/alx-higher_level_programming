@@ -1,6 +1,6 @@
 #!/usr/bin/python3
 """
-script that takes in a letter and sends a POST request to http://0.0.0.0:5000/search_user
+Script that takes in a letter and sends a POST request to http://0.0.0.0:5000/search_user
 with the letter as a parameter.
 """
 import requests
@@ -12,7 +12,7 @@ if __name__ == "__main__":
 
     r = requests.post("http://0.0.0.0:5000/search_user", data=payload)
     try:
-        res = r.json
+        res = r.json()
         if res == {}:
             print("No result")
         else:
