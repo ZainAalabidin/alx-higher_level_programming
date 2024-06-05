@@ -1,10 +1,10 @@
 #!/usr/bin/node
-const request = require("request");
+const request = require('request');
 const apiUrl = process.argv[2];
-const characterId = "18";
+const characterId = '18';
 
 if (!apiUrl) {
-  console.log("Usage: ./script.js <API_URL>");
+  console.log('Usage: ./script.js <API_URL>');
   process.exit(1);
 }
 
