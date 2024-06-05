@@ -9,10 +9,9 @@ request(url, (error, response, body) => {
   if (!error) {
     fs.writeFile(file, body, { encoding: 'utf-8' }, err => {
       if (err) {
-        console.error(`Failed to write file: ${err}`);
+        console.error(`${err}`);
         return;
       }
-      console.log(`Content successfully saved to ${file}`);
     });
   }
 });
