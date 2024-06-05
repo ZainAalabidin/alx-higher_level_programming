@@ -10,7 +10,6 @@ request(url, (error, response, body) => {
     fs.writeFile(file, body, { encoding: 'utf-8' }, err => {
       if (err) {
         console.log(err);
-        return;
       }
     });
   }
