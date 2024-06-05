@@ -10,11 +10,15 @@ request(apiUrl, (err, response, body) => {
     let count = 0;
 
     films.forEach(film => {
-      if (film.characters.includes(`https://swapi-api.alx-tools.com/api/people/${characterId}/`)) {
+      if (
+        film.characters.includes(
+          `https://swapi-api.alx-tools.com/api/people/${characterId}/`
+        )
+      ) {
         count++;
       }
     });
 
-    console.log(count);
+    return console.log(count);
   }
 });
