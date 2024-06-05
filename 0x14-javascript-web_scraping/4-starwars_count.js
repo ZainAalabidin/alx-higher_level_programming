@@ -18,7 +18,7 @@ request(apiUrl, (err, response, body) => {
     const films = data.results;
     let count = 0;
 
-    films.forEach((film) => {
+    films.forEach(film => {
       if (
         film.characters.includes(
           `https://swapi-api.alx-tools.com/api/people/${characterId}/`
