@@ -73,5 +73,4 @@
 **13. And press ENTER**
 - **File:** `103-script.js`
 - Implement a script that triggers a specific action when the user presses the Enter key.
-
-https://github.com/ZainAalabidin/alx-higher_level_programming/blob/master/0x15-javascript-web_jquery/0-script.js
+/0-script.js
